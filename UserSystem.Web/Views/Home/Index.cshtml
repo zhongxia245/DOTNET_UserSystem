@@ -1,0 +1,76 @@
+﻿<script src="../../Content/EasyUI/jquery-1.8.0.min.js"></script>
+<script src="../../Content/EasyUI/jquery.easyui.min.js"></script>
+<script src="../../Content/EasyUI/easyui-lang-zh_CN.js"></script>
+<link href="../../Content/EasyUI/themes/bootstrap/easyui.css" rel="stylesheet" />
+<link href="../../Content/EasyUI/themes/icon.css" rel="stylesheet" />
+<script src="../../Scripts/Commom/Login.js"></script>
+<script src="../../Scripts/Commom/TabOp.js"></script>
+<link href="../../Content/Menu.css" rel="stylesheet" />
+<body class="easyui-layout">
+    @* 获取当前登录用户的对象 *@
+    @{ UserSystem.Model.User user = Session["user"] as UserSystem.Model.User;}
+
+    @* 布局的北边 *@
+    <div data-options="region:'north',border:false" style="height: 55px; background: #67B2D6; padding: 10px">
+        <div style="float: left;">
+            <img src="../../Content/images/LOGO.png" alt="用户管理系统" />
+        </div>
+        <div style="float: right; padding: 5px; border: 0px solid #ddd">
+            <a href="#"  class="easyui-linkbutton" data-options="iconCls:'icon-man'">@user.Name</a>
+            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-sign-out'" onclick="logoff();">注销</a>
+        </div>
+    </div>
+
+    @* 布局的西边的菜单栏 *@
+    <div data-options="region:'west',split:true,title:'系统菜单'" style="width: 200px;">
+        <div id="aa" class="easyui-accordion" data-options="fit:true,animate:false">
+            <div title="树形菜单" data-options="iconCls:'icon-reload',selected:true" style="padding: 10px;">
+                <ul id="tt" class="ul" style="padding:0; margin:0;"></ul>
+            </div>
+            <div title="系统设计" data-options="iconCls:'icon-reload'" style="padding: 10px;">
+                待建设
+            </div>
+            <div title="帮助" data-options="iconCls:'icon-reload'" style="padding: 10px;">
+                待建设
+            </div>
+        </div>
+    </div>
+
+    @*布局的南边，也就是底部  *@
+    <div data-options="region:'south',border:false" style="height: 40px; background: #E5E5E5; padding: 10px;">
+        <span>当前登录用户：@user.Name</span>
+    </div>
+
+    @* 布局的中间，这个一定要。 *@
+    <div data-options="region:'center'">
+        <div id="tabs" class="easyui-tabs" data-options="fit:true">
+            <div title="首页" style="padding: 20px; display: block;">
+                <h2>这是一个简单的用户管理系统</h2>
+                <h3>主要使用了EasyUI前端框架，以及MVC（ASP.NET）和Sqlite进行开发而成的</h3>
+                <p>1、EasyUI可以很快速的建设出前端后台的界面，是一个轻量级的前端框架,在后台方面很好用。</p>
+                <p>2、MVC框架把前后端分离，适合团队合作开发，每个人负责一层，各层之间不影响。</p>
+                <p>3、Sqlite 数据库（一个小型的数据库 不用安装 很多单机软件 利用他来做数据保存）</p>
+                <h4>　　　　　　　　　　　　　　　　　　　　make in zhongxia by VS2012 ,at 2014.10.26</h4>
+                <hr />
+                <p style="font:15px;">
+                    开发这个系统的步骤： <br />
+                        1、创建项目-->创建MVC-->配置好三层框架 <br />
+                        2、使用EasyUI的Layout（布局，分为“东南西北中”五个方位），center是最重要的 <br />
+                        3、创建左边的树形菜单 <br />
+                        4、点击左边的属性菜单，然后再中间添加一个选项卡 <br />
+                        5、设置一个登陆页面 <br />
+                        6、创建一个Sqlite.db文件，并创建数据库 <br />
+                        7、使用动软生成工具，生成代码，然后复制各层的.cs文件到项目的每一层去 <br />
+                        8、把登陆页面的信息与数据库信息核对，看是否账号密码正确，成功后并记录到Session <br />
+                        9、设置不可以直接定位到后台界面，一定要登录后才可以跳转过去（使用MVC的过滤器） <br />
+                        10、添加一个注销功能，主要是清楚Session，并跳转到登陆页面 <br />
+                        11、创建DataGrid表格，并绑定数据库查询到的数据 <br />
+                        12、添加数据到数据库，并及时更新到页面表格上 <br />
+                        13、设置分页，要重置JSON格式，在前面加上total(总记录条数)，没有重置JSON格式，无法分页（在谷歌下可以，Firefox不可用，360、IE没测过） <br />
+                        14、设置LOGO，清除多余的东西 <br />
+                </p>
+                   
+            </div>
+        </div>
+    </div>
+</body>

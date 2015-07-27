@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "UserSearch";
+}
+
+<table id="tt" class="easyui-datagrid" style="width: 700px; height: 250px"
+    url="/Account/LoadUser"
+    iconcls="icon-save"
+    rownumbers="true" 
+    pagination="true"
+    fit="true"
+    pageSize="20">
+    <thead>
+        <tr>
+            <th field="ID"  align="center" sortable="true">Item ID</th>
+            <th field="Name" align="center" sortable="true">Product ID</th>
+            <th field="Password"  align="center" align="right" sortable="true">List Price</th>
+            <th field="AddTime"align="center" align="right" sortable="true">Unit Cost</th>
+        </tr>
+    </thead>
+</table>
+

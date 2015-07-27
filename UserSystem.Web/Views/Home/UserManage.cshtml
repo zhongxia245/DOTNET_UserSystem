@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "UserManage";
+}
+<body>
+    <script src="../../Scripts/Commom/AccountManage.js"></script>
+    <table id="dg" class="easyui-datagrid" style="width: 700px; height: 250px;"
+        data-options="rownumbers:true
+        ,singleSelect:false
+        ,url:'/Account/LoadUser'
+        ,toolbar:'#tb'
+        ,fit:true
+        ,pagination:true
+        ,pageSize:20
+        ,checkOnSelect:true
+        ,selectOnCheck:true">
+        <thead>
+            <tr>
+                <th field="ck" checkbox="true"></th>
+                <th data-options="field:'ID',width:40,align:'center'" sortable="true">ID</th>
+                <th data-options="field:'Name',width:120,align:'center'" sortable="true">用户名</th>
+                <th data-options="field:'Password',width:100,align:'center'" sortable="true">密码</th>
+                <th data-options="field:'AddTime',width:180,align:'center'" sortable="true">注册时间</th>
+            </tr>
+        </thead>
+    </table>
+    <div id="tb" style="padding: 5px; height: auto;">
+
+        <div>
+            <span>用户名：</span>
+            <input type="text" id="queryName" >
+            <a href="javascript:void(0);" id="search" class="easyui-linkbutton" iconcls="icon-search" style="padding:0">查询</a>
+        </div>
+
+        <div style="margin-bottom: 5px">
+            <a href="#" id="add" class="easyui-linkbutton" iconcls="icon-add" plain="true">添加</a>
+          @*  <a href="#" id="edit" class="easyui-linkbutton" iconcls="icon-edit" plain="true">编辑</a>*@
+            <a href="#" id="del" class="easyui-linkbutton" iconcls="icon-remove" plain="true">删除</a>
+        </div>
+    </div>
+
+
+    <div id="dialog" class="easyui-dialog" title="添加" closed="true" style="width: 320px; height: 160px; padding: 5px;">
+        <table style="margin: 5px 10px">
+            <tr>
+                <td>用户名：</td>
+                <td>
+                    <input type="text" id="name" name="name" /><span style="color: red;">(*)</span></td>
+            </tr>
+            <tr>
+                <td>密　码：</td>
+                <td>
+                    <input type="password" id="pwd" name="pwd" /></td>
+            </tr>
+            <tr>
+                <td><input id="id" type="hidden" value=""/></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    <input id="addUser" type="button" value="添加" />
+                    <input id="save" type="button" value="保存" />
+                    <input id="reset" type="reset" value="重置" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>

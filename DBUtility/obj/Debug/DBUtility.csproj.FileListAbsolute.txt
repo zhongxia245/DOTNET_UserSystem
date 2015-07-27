@@ -1,0 +1,17 @@
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\UserSystem.DBUtility.dll
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\UserSystem.DBUtility.pdb
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\IBatisNet.Common.dll
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\MySql.Data.dll
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\System.Data.SQLite.DLL
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\bin\Debug\Castle.DynamicProxy.dll
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\obj\Debug\UserSystem.DBUtility.dll
+I:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\DBUtility\obj\Debug\UserSystem.DBUtility.pdb
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\bin\Debug\UserSystem.DBUtility.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\bin\Debug\UserSystem.DBUtility.pdb
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\bin\Debug\IBatisNet.Common.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\bin\Debug\Castle.DynamicProxy.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\obj\Debug\UserSystem.DBUtility.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\DBUtility\obj\Debug\UserSystem.DBUtility.pdb

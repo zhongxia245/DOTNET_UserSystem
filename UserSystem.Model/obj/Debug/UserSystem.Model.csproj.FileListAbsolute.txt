@@ -1,0 +1,9 @@
+i:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\UserSystem.Model\bin\Debug\UserSystem.Model.dll
+i:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\UserSystem.Model\bin\Debug\UserSystem.Model.pdb
+i:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\UserSystem.Model\obj\Debug\UserSystem.Model.csprojResolveAssemblyReference.cache
+i:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\UserSystem.Model\obj\Debug\UserSystem.Model.dll
+i:\库\Documents\Visual Studio 2012\UserSystem\UserSystem\UserSystem.Model\obj\Debug\UserSystem.Model.pdb
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\UserSystem.Model\bin\Debug\UserSystem.Model.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\UserSystem.Model\bin\Debug\UserSystem.Model.pdb
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\UserSystem.Model\obj\Debug\UserSystem.Model.dll
+I:\库\Documents\Visual Studio 2012\Projects\UserSystem\UserSystem\UserSystem.Model\obj\Debug\UserSystem.Model.pdb
